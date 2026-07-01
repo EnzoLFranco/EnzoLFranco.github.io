@@ -1,96 +1,196 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<script>document.documentElement.classList.add('js');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enzo Lemos Franco — Desenvolvedor Backend em Java e Spring Boot, explorando Python/Django, React e fundamentos de Dados.">
     <title>Enzo Lemos Franco | Desenvolvedor Backend</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <main class="container">
+    <div class="terminal">
 
-        <header class="hero-section">
-            <h1 class="fade-in">Enzo Lemos Franco</h1>
-            <h2 class="fade-in">Desenvolvedor Backend | Java | Spring Boot | SQL</h2>
-            <p class="fade-in">
-                Sou um desenvolvedor back-end com experiência em Java e Spring Boot, focado em criar APIs robustas e escaláveis. Minha paixão é otimizar performance e garantir a integridade dos dados, utilizando bancos de dados SQL como PostgreSQL e MySQL.
-            </p>
-            <a href="https://github.com/EnzoLFranco" target="_blank" class="cta-button fade-in">
-                Conheça meus Projetos
-            </a>
-        </header>
+        <div class="titlebar">
+            <div class="dots" aria-hidden="true"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+            <span class="path">enzo@portfolio:~</span>
+            <nav class="flags" aria-label="Navegação principal">
+                <a href="#skills">--skills</a>
+                <a href="#projects">--projects</a>
+                <a href="#contact">--contact</a>
+            </nav>
+        </div>
 
-        <section id="skills" class="skills-section">
-            <h2 class="section-title fade-in">Minhas Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-category fade-in">
-                    <h3>Linguagens e Frameworks</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-java"></i> Java</li>
-                        <li><i class="fa-solid fa-leaf"></i> Spring Boot</li>
-                    </ul>
-                </div>
-                <div class="skill-category fade-in">
-                    <h3>Banco de Dados</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
-                        <li><i class="fa-solid fa-database"></i> MySQL</li>
-                        <li><i class="fa-solid fa-database"></i> SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category fade-in">
-                    <h3>Ferramentas e DevOps</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                        <li><i class="fa-brands fa-github"></i> GitHub</li>
-                        <li><i class="fa-brands fa-jira"></i> Jira</li>
-                        <li><i class="fa-brands fa-docker"></i> Docker</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <main class="container">
 
-        <section id="projects" class="projects-section">
-            <h2 class="section-title fade-in">Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <h3>Sistema de Registro de Ponto e Geração de Planilhas</h3>
-                    <p>Desenvolvi a API back-end para um sistema de registro de ponto usando Java e Spring Boot. O projeto simulou um ambiente corporativo, aplicando metodologias ágeis como Scrum e utilizando PostgreSQL e Docker para o gerenciamento de dados e ambiente.</p>
-                    <a href="https://github.com/SQLutions-FATEC/API-3-Semestre" target="_blank" class="project-link">
-                        Ver no GitHub <i class="fa-solid fa-arrow-right"></i>
+            <header class="hero-section">
+                <p class="prompt fade-in">
+                    <span class="prompt-user">guest@enzo</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> whoami
+                </p>
+                <div class="output hero-output fade-in">
+                    <h1 data-typewriter>Enzo Lemos Franco</h1>
+                    <h2>Desenvolvedor Backend | Java · Spring Boot · Python</h2>
+                    <ul class="tag-row" aria-label="Principais tecnologias">
+                        <li class="tag">Java</li>
+                        <li class="tag">Spring Boot</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">Django</li>
+                        <li class="tag">React</li>
+                        <li class="tag tag-amber">Dados</li>
+                    </ul>
+                    <p>
+                        Sou desenvolvedor back-end com experiência em Java e Spring Boot, focado em criar APIs robustas e escaláveis. Atualmente estou expandindo meu repertório com Python (Django) e JavaScript (React), além de dar os primeiros passos na área de dados — estudando modelagem de Data Warehouse e análise de dados. Gosto de otimizar performance e garantir a integridade dos dados, usando bancos como PostgreSQL e MySQL.
+                    </p>
+                    <a href="#projects" class="cta-button">
+                        <span class="cta-dollar">$</span> ./ver-projetos.sh
                     </a>
                 </div>
-                <div class="project-card fade-in">
-                    <h3>Sistema de Avaliação PACER</h3>
-                    <p>Atuei no desenvolvimento back-end de um sistema de avaliação de desempenho em grupo, utilizando Java e MySQL. A experiência proporcionou uma vivência prática em modelagem de dados e na organização de código para entrega de soluções funcionais.</p>
-                    <a href="https://github.com/SQLutions-FATEC/API-2-Semestre" target="_blank" class="project-link">
-                        Ver no GitHub <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+            </header>
+
+            <section id="skills" class="skills-section">
+                <p class="prompt fade-in">
+                    <span class="prompt-user">guest@enzo</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> cat skills.json
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-block fade-in">
+                        <span class="json-key">"linguagens_e_frameworks"</span><span class="json-punct">: [</span>
+                        <ul>
+                            <li><i class="fa-brands fa-java"></i><span class="json-str">"Java"</span></li>
+                            <li><i class="fa-solid fa-leaf"></i><span class="json-str">"Spring Boot"</span></li>
+                            <li><i class="fa-brands fa-python"></i><span class="json-str">"Python"</span></li>
+                            <li><i class="fa-solid fa-layer-group"></i><span class="json-str">"Django"</span></li>
+                            <li><i class="fa-brands fa-square-js"></i><span class="json-str">"JavaScript"</span></li>
+                            <li><i class="fa-brands fa-react"></i><span class="json-str">"React"</span></li>
+                        </ul>
+                        <span class="json-punct">]</span>
+                    </div>
+                    <div class="skill-block fade-in">
+                        <span class="json-key">"banco_de_dados"</span><span class="json-punct">: [</span>
+                        <ul>
+                            <li><i class="fa-solid fa-database"></i><span class="json-str">"PostgreSQL"</span></li>
+                            <li><i class="fa-solid fa-database"></i><span class="json-str">"MySQL"</span></li>
+                            <li><i class="fa-solid fa-database"></i><span class="json-str">"SQL"</span></li>
+                        </ul>
+                        <span class="json-punct">]</span>
+                    </div>
+                    <div class="skill-block fade-in">
+                        <span class="json-key">"dados_e_analytics"</span><span class="json-punct">: [</span>
+                        <span class="json-comment">// fundamentos, em aprendizado</span>
+                        <ul>
+                            <li><i class="fa-solid fa-warehouse"></i><span class="json-str">"Modelagem de Data Warehouse"</span></li>
+                            <li><i class="fa-solid fa-chart-line"></i><span class="json-str">"Análise de Dados com Python"</span></li>
+                        </ul>
+                        <span class="json-punct">]</span>
+                    </div>
+                    <div class="skill-block fade-in">
+                        <span class="json-key">"ferramentas_e_devops"</span><span class="json-punct">: [</span>
+                        <ul>
+                            <li><i class="fa-brands fa-git-alt"></i><span class="json-str">"Git"</span></li>
+                            <li><i class="fa-brands fa-github"></i><span class="json-str">"GitHub"</span></li>
+                            <li><i class="fa-brands fa-docker"></i><span class="json-str">"Docker"</span></li>
+                            <li><i class="fa-brands fa-jira"></i><span class="json-str">"Jira"</span></li>
+                        </ul>
+                        <span class="json-punct">]</span>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer id="contact" class="contact-section">
-            <h2 class="section-title fade-in">Entre em Contato</h2>
-            <p class="fade-in">Estou sempre aberto a novas oportunidades e conexões.</p>
-            <div class="contact-links fade-in">
-                <a href="https://github.com/EnzoLFranco" target="_blank" title="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:fenzolemos@gmail.com" target="_blank" title="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/enzo-lemos-franco/" target="_blank" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-        </footer>
+            <section id="projects" class="projects-section">
+                <p class="prompt fade-in">
+                    <span class="prompt-user">guest@enzo</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> ls -la ~/projects
+                </p>
+                <div class="projects-grid">
 
-    </main>
+                    <article class="project-card fade-in">
+                        <p class="file-line"><span class="file-perms">drwxr-xr-x</span> synthesi/</p>
+                        <h3>Synthesi</h3>
+                        <ul class="tag-row small">
+                            <li class="tag">Python</li>
+                            <li class="tag">Django</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">Docker</li>
+                            <li class="tag">React</li>
+                            <li class="tag">TypeScript</li>
+                        </ul>
+                        <p>Plataforma de BI desenvolvida em parceria com uma empresa real para o desafio de 5º semestre. Centraliza dados de projetos e programas que estavam dispersos em múltiplos sistemas, aplicando estratégias de Data Warehouse para transformá-los em indicadores de custo, estoque, compras e produtividade para gestores. Atuei no back-end com Python e Django, integrando dados em PostgreSQL num ambiente Docker, com front-end em React, TypeScript e Tailwind CSS.</p>
+                        <a href="https://github.com/SQLutions-FATEC/API-5-Semestre" target="_blank" rel="noopener" class="project-link">
+                            <span class="cta-dollar">$</span> git clone synthesi <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <p class="file-line"><span class="file-perms">drwxr-xr-x</span> ponto-api/</p>
+                        <h3>Sistema de Registro de Ponto e Geração de Planilhas</h3>
+                        <ul class="tag-row small">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">Docker</li>
+                        </ul>
+                        <p>API back-end para um sistema de registro de ponto, simulando um ambiente corporativo real. Apliquei metodologias ágeis (Scrum) do levantamento de requisitos à entrega, usando Java, Spring Boot, PostgreSQL e Docker para consolidar os registros e gerar planilhas de forma automatizada.</p>
+                        <a href="https://github.com/SQLutions-FATEC/API-3-Semestre" target="_blank" rel="noopener" class="project-link">
+                            <span class="cta-dollar">$</span> git clone ponto-api <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <p class="file-line"><span class="file-perms">drwxr-xr-x</span> pacer-sistema/</p>
+                        <h3>Sistema de Avaliação PACER</h3>
+                        <ul class="tag-row small">
+                            <li class="tag">Java</li>
+                            <li class="tag">MySQL</li>
+                        </ul>
+                        <p>Back-end de um sistema de avaliação de desempenho em grupo, construído com Java e MySQL. Foi minha primeira imersão prática em modelagem de dados relacional, organização de código e entrega de funcionalidades dentro de um time ágil.</p>
+                        <a href="https://github.com/SQLutions-FATEC/API-2-Semestre" target="_blank" rel="noopener" class="project-link">
+                            <span class="cta-dollar">$</span> git clone pacer-sistema <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <footer id="contact" class="contact-section">
+                <p class="prompt fade-in">
+                    <span class="prompt-user">guest@enzo</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> ./contact.sh --help
+                </p>
+                <div class="output fade-in">
+                    <p class="help-intro">Estou sempre aberto a novas oportunidades e conexões. Escolha uma opção:</p>
+                    <ul class="flag-list">
+                        <li>
+                            <a href="https://github.com/EnzoLFranco" target="_blank" rel="noopener">
+                                <span class="flag-name">--github</span>
+                                <span class="flag-desc">Ver meus repositórios</span>
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:fenzolemos@gmail.com">
+                                <span class="flag-name">--email</span>
+                                <span class="flag-desc">fenzolemos@gmail.com</span>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/enzo-lemos-franco/" target="_blank" rel="noopener">
+                                <span class="flag-name">--linkedin</span>
+                                <span class="flag-desc">Conectar no LinkedIn</span>
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="prompt closing-prompt fade-in">
+                    <span class="prompt-user">guest@enzo</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> <span class="cursor" aria-hidden="true"></span>
+                </p>
+            </footer>
+
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
