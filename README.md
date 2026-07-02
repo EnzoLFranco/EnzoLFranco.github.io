@@ -1,25 +1,60 @@
-# Portfólio - Enzo Lemos Franco
+# Portfólio — Enzo Lemos Franco
 
-Este é o repositório do meu portfólio online, desenvolvido para funcionar como um cartão de visitas digital. O site foi construído de forma estática, utilizando apenas HTML, CSS e JavaScript puro.
-## 🚀 Acesso ao Vivo
+Repositório do meu portfólio online, um cartão de visitas digital com identidade visual inspirada em terminal de desenvolvedor. Construído inteiramente com **HTML, CSS e JavaScript puros** — sem frameworks ou bibliotecas de build.
 
-Você pode visualizar o projeto em funcionamento através do link abaixo:
+##  Acesso ao Vivo
 
-**[https://enzolfranco.github.io/portfolio/](https://enzolfranco.github.io/portfolio/)**
+**[https://enzolfranco.github.io/](https://enzolfranco.github.io/)**
 
-## 🛠️ Tecnologias Utilizadas
+##  Sobre o Projeto
 
-O projeto foi construído com as seguintes tecnologias:
+O site simula uma janela de terminal: cada seção é apresentada como a saída de um comando (`whoami`, `cat skills.json`, `ls -la ~/projects`, `./contact.sh --help`), reforçando de forma temática o meu perfil como desenvolvedor. Inclui:
 
-- **HTML5:** Para a estrutura e semântica do conteúdo.
-- **CSS3:** Para estilização, layout (Grid e Flexbox) e responsividade.
-- **JavaScript (Puro):** Para interatividade e animações sutis ao rolar a página.
-- **Font Awesome:** Para os ícones.
+- Efeito de digitação (*typewriter*) na apresentação inicial;
+- Animações de entrada ao rolar a página, via `IntersectionObserver`;
+- Layout responsivo para desktop e mobile;
+- Suporte a `prefers-reduced-motion`, desativando animações para quem prefere;
+- Conteúdo sempre visível mesmo sem JavaScript habilitado (progressive enhancement).
 
-## 📫 Contato
+##  Tecnologias Utilizadas
+
+- **HTML5** — estrutura semântica do conteúdo.
+- **CSS3** — estilização com variáveis customizadas, Grid e Flexbox, totalmente responsivo.
+- **JavaScript (puro)** — interatividade, efeito de digitação e animações de rolagem.
+- **[JetBrains Mono](https://www.jetbrains.com/lp/mono/)** — tipografia monoespaçada usada em todo o site.
+- **[Font Awesome](https://fontawesome.com/)** — ícones.
+
+##  Estrutura do Projeto
+
+```
+.
+├── index.html      # Estrutura e conteúdo do site
+├── style.css       # Estilos, temas e responsividade
+├── script.js       # Animações e interatividade
+└── README.md
+```
+
+##  Rodando Localmente
+
+Por ser um site estático, basta clonar o repositório e abrir o `index.html` no navegador:
+
+```bash
+git clone https://github.com/EnzoLFranco/EnzoLFranco.github.io.git
+cd EnzoLFranco.github.io
+```
+
+Ou, para simular o ambiente com um servidor local:
+
+```bash
+python3 -m http.server 8000
+```
+
+E acesse `http://localhost:8000`.
+
+##  Contato
 
 Vamos nos conectar!
 
-- **LinkedIn:** [https://www.linkedin.com/in/enzo-lemos-franco/](https://www.linkedin.com/in/enzo-lemos-franco/)
+- **LinkedIn:** [enzo-lemos-franco](https://www.linkedin.com/in/enzo-lemos-franco/)
 - **Email:** [fenzolemos@gmail.com](mailto:fenzolemos@gmail.com)
-- **GitHub:** [https://github.com/EnzoLFranco](https://github.com/EnzoLFranco)
+- **GitHub:** [@EnzoLFranco](https://github.com/EnzoLFranco)
