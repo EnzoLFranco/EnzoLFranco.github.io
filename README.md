@@ -25,7 +25,6 @@ O site simula uma janela de terminal: cada seção é apresentada como a saída 
 - **[Font Awesome](https://fontawesome.com/)** — ícones.
 
 ##  Estrutura do Projeto
-
 ```
 .
 ├── index.html      # Estrutura e conteúdo do site
